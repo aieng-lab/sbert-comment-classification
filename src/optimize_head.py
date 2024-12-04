@@ -1,6 +1,6 @@
 """Optimize SetFit head.
 
-This module provides the required logic to run experiments to find a better classifier from Sentence-BERT embeddings.
+This module provides the required logic to run experiments by language to find a better classification head for a Sentence-BERT embedding model.
 """
 
 from joblib import Parallel, delayed
@@ -90,7 +90,7 @@ def get_head_candidates():
 
 def main():
 
-    model_name = "amb-sMO-bs32-e5-10-10-i60-hLR"
+    model_name = "amb-i60-hLR"
     model_path = "../models/{}/{}"
     
     # Baseline
