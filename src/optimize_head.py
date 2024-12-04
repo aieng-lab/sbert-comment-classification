@@ -1,3 +1,8 @@
+"""Optimize SetFit head.
+
+This module provides the required logic to run experiments to find a better classifier from Sentence-BERT embeddings.
+"""
+
 from joblib import Parallel, delayed
 import json
 from tqdm import tqdm
