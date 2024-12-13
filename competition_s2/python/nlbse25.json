@@ -1,0 +1,12 @@
+{
+    "python_Usage_f1": 0.717741935483871,
+    "python_Parameters_f1": 0.803088803088803,
+    "python_DevelopmentNotes_f1": 0.3252032520325203,
+    "python_Expand_f1": 0.5536723163841808,
+    "python_Summary_f1": 0.6153846153846154,
+    "python_avg_f1": 0.603018184474798,
+    "avg_f1": 0.6030181844747982,
+    "avg_runtime": 0.23508358001708984,
+    "avg_flops": 103.621318656,
+    "submission_score": 0.7482627147379552
+}

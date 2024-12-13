@@ -1,0 +1,21 @@
+{
+    "pharo_Keyimplementationpoints_f1": 0.6976744186046512,
+    "pharo_Example_f1": 0.9008264462809917,
+    "pharo_Responsibilities_f1": 0.6434782608695652,
+    "pharo_Classreferences_f1": 0.4,
+    "pharo_Intent_f1": 0.7384615384615385,
+    "pharo_Keymessages_f1": 0.7096774193548387,
+    "pharo_Collaborators_f1": 0.4,
+    "pharo_avg_f1": 0.6414454405102265,
+    "avg_f1": 0.6414454405102266,
+    "avg_runtime": 1.5860355138778686,
+    "avg_flops": 91.936779264,
+    "submission_score": 0.7177483725804612,
+    "head": {
+        "algorithm": "svm",
+        "hparams": {
+            "C": 1.0,
+            "kernel": "poly"
+        }
+    }
+}

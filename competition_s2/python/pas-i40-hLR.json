@@ -1,0 +1,18 @@
+{
+    "python_Usage_f1": 0.7705627705627706,
+    "python_Parameters_f1": 0.784,
+    "python_DevelopmentNotes_f1": 0.38461538461538464,
+    "python_Expand_f1": 0.5029239766081871,
+    "python_Summary_f1": 0.6363636363636364,
+    "python_avg_f1": 0.6156931536299958,
+    "avg_f1": 0.6156931536299958,
+    "avg_runtime": 1.8046049118041991,
+    "avg_flops": 966.8188701900001,
+    "submission_score": 0.6585589408982295,
+    "head": {
+        "algorithm": "lr",
+        "hparams": {
+            "C": 0.01
+        }
+    }
+}

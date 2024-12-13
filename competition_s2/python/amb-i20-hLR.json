@@ -1,0 +1,18 @@
+{
+    "python_Usage_f1": 0.759493670886076,
+    "python_Parameters_f1": 0.8203125,
+    "python_DevelopmentNotes_f1": 0.45652173913043476,
+    "python_Expand_f1": 0.5070422535211268,
+    "python_Summary_f1": 0.7305389221556886,
+    "python_avg_f1": 0.6547818171386652,
+    "avg_f1": 0.6547818171386652,
+    "avg_runtime": 0.3647517919540405,
+    "avg_flops": 1665.6586636060001,
+    "submission_score": 0.7116526720607975,
+    "head": {
+        "algorithm": "xg",
+        "hparams": {
+            "max_depth": 2
+        }
+    }
+}

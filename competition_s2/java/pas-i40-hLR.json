@@ -1,0 +1,21 @@
+{
+    "java_summary_f1": 0.8809390721073225,
+    "java_Ownership_f1": 1.0,
+    "java_Expand_f1": 0.3553299492385787,
+    "java_usage_f1": 0.8928571428571429,
+    "java_Pointer_f1": 0.8894472361809045,
+    "java_deprecation_f1": 0.75,
+    "java_rational_f1": 0.3252032520325203,
+    "java_avg_f1": 0.7276823789166385,
+    "avg_f1": 0.7276823789166383,
+    "avg_runtime": 3.2573220252990724,
+    "avg_flops": 6375.593889936,
+    "submission_score": 0.45129279074058004,
+    "head": {
+        "algorithm": "svm",
+        "hparams": {
+            "C": 0.01,
+            "kernel": "rbf"
+        }
+    }
+}

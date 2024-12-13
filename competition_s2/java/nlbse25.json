@@ -1,0 +1,14 @@
+{
+    "java_summary_f1": 0.855664174813111,
+    "java_Ownership_f1": 1.0,
+    "java_Expand_f1": 0.3697478991596639,
+    "java_usage_f1": 0.8753056234718827,
+    "java_Pointer_f1": 0.8676470588235294,
+    "java_deprecation_f1": 0.6923076923076923,
+    "java_rational_f1": 0.22459893048128343,
+    "java_avg_f1": 0.6978959112938804,
+    "avg_f1": 0.6978959112938804,
+    "avg_runtime": 0.6749661922454834,
+    "avg_flops": 803.469044736,
+    "submission_score": 0.7596001372970689
+}

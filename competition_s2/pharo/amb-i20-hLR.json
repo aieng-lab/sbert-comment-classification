@@ -1,0 +1,18 @@
+{
+    "pharo_Keyimplementationpoints_f1": 0.6419753086419753,
+    "pharo_Example_f1": 0.9333333333333333,
+    "pharo_Responsibilities_f1": 0.6972477064220184,
+    "pharo_Classreferences_f1": 0.4,
+    "pharo_Intent_f1": 0.8852459016393442,
+    "pharo_Keymessages_f1": 0.8275862068965517,
+    "pharo_Collaborators_f1": 0.5882352941176471,
+    "pharo_avg_f1": 0.7105176787215529,
+    "avg_f1": 0.7105176787215528,
+    "avg_runtime": 0.32963478565216064,
+    "avg_flops": 1481.310230311,
+    "submission_score": 0.7538728065944053,
+    "head": {
+        "algorithm": "default",
+        "hparams": null
+    }
+}
