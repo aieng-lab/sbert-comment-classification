@@ -1,6 +1,6 @@
 """Train SetFit.
 
-This module provides the required logic to fine-tune a Sentence-BERT model with a classification head on top by language using the SetFit framework.
+This module provides the required logic to fine-tune a Sentence-BERT model combined with a classification head. The process is carried out independently by language.
 """
 
 from tqdm.auto import tqdm
@@ -27,8 +27,7 @@ MODEL_ALIASES = {
     "sentence-transformers/all-distilroberta-v1": "adr"
 }
 
-#NEW_MODEL_NAME = "{alias}-s{strategy}-bs{batch_size}-e{num_epochs}-i{num_iterations}-hLR"
-NEW_MODEL_NAME = "{alias}-i{num_iterations}-hLR"
+NEW_MODEL_NAME = "{}-i{}-hLR"
 
 
 def main():
@@ -46,13 +45,7 @@ def main():
         "pharo": ["Keyimplementationpoints", "Example", "Responsibilities", "Classreferences", "Intent", "Keymessages", "Collaborators"]
     }  
 
-    new_model_name = NEW_MODEL_NAME.format(
-        alias=MODEL_ALIASES[model_name],
-        # strategy="MO" if multi_target_strategy == "multi-output" else "OVR",
-        # batch_size=batch_size,
-        # num_epochs="-".join([str(v) for v in num_epochs.values()]),
-        num_iterations=num_iterations
-    )
+    new_model_name = NEW_MODEL_NAME.format(MODEL_ALIASES[model_name], num_iterations)
     print("=====")
     print("New model:", new_model_name)
     print("=====")

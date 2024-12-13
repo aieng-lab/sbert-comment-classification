@@ -1,6 +1,6 @@
 """Optimize SetFit head.
 
-This module provides the required logic to run experiments by language to find a better classification head for a Sentence-BERT embedding model.
+This module provides the required logic to run experiments by language to find a better classification head for an embedding model. The process is carried out independently by language.
 """
 
 from joblib import Parallel, delayed
