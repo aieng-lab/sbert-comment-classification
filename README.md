@@ -39,10 +39,11 @@ tool competition," in Proceedings of The 4th International Workshop on Natural L
     3.7. `evaluate_submission_s2-1.ipynb`: Evaluate candidates in terms of classification performance, runtime, and GFLOPS for a given language.  
     3.8. `analyze_results_s2-2.ipynb`: Analyze the second part of the results of the second experimentation stage. Aggregate classification performance, runtime, GFLOPS, and submission scores by language.  
     3.9. `evaluate_submission_s2-2.ipynb`: Evaluate candidates in terms of classification performance, runtime, and GFLOPS across languages. Candidates migth use different pre-trained embedding models and head types.  
+    3.10. `evaluate_nb.ipynb`: Trains and evaluates a very simple Naive Bayes model that uses a bag-of-words representation of the comments. This candidate achieves a very high submission score because (0.682) but is not competitive in terms of classification performance (0.47).
 
 ### Submission
 
-The best combinations of embedding model and classification head (one for language) are published on Hugging Face with the IDs `fabiancpl/nlbse25_java`, `fabiancpl/nlbse25_python`, and `fabiancpl/nlbse25_pharo`.
+The best combinations of embedding model and classification head (one for language) are published on Hugging Face with the IDs `fabiancpl/nlbse25_java`, `fabiancpl/nlbse25_python`, and `fabiancpl/nlbse25_pharo`. Additionally, the Naive Bayes model is provided in the `evaluate_nb.ipynb` notebook.
 
 When running the original evaluation notebook with these models on Google Colab (see [here](https://colab.research.google.com/drive/17Bep6v_1Ia_dVKNnVtg_myr7GMRhPfn1?usp=sharing)), the submission score obtained is 0.65, a little lower than that reported in the paper (0.67). This is attributed to the difference in the GPUs between Google Colab and the local experimentation environment.
 
