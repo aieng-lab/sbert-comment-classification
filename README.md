@@ -2,11 +2,11 @@
 
 Source code required to replicate the results reported in *F. Peña, S. Herbold, "Evaluating the Performance and Efficiency of Sentence-BERT for Code Comment Classification," in Proceedings of The 4th International Workshop on Natural Language-based Software Engineering (NLBSE’25), 2025*.
 
-### Abstract
+### :memo: Abstract
 
 This work evaluates [Sentence-BERT](https://sbert.net/index.html) for a multi-label code comment classification task seeking to maximize the classification performance while controlling efficiency constraints during inference. Using a dataset of 13,216 labeled comment sentences, Sentence-BERT models are fine-tuned and combined with different classification heads to recognize comment types. While larger models outperform smaller ones in terms of F1, the latter offer outstanding efficiency, both in runtime and GFLOPS. As result, a balance between a reasonable F1 improvement (+0.0346) and a minimal efficiency degradation (+1.4x in runtime and +2.1x in GFLOPS) is reached.
 
-### Experimentation process
+### 🔬 Experimentation process
 
 The experimentation process is done in two stages:
 1. Fine-tuning of embedding models combined with a multi-output logistic regression classification head by default.
@@ -24,15 +24,15 @@ paraphrase-albert-small-v2 = pas
 all-distilroberta-v1 = adr
 ```
 
-### Setup
+### :gear: Setup
 
 The training and evaluation process leverages an 8-GPU NVIDIA A100 setup. However, final evaluation of the submitted models is also carried out on Google Colab T4, as specified in the competition rules (see paper, Section II and [NLBSE'25](https://nlbse2025.github.io/tools/)).
 
-### Submission
+### :outbox_tray: Submission
 
 The best combinations of embedding model and classification head (one for each language) are published on Hugging Face under the IDs `fabiancpl/nlbse25_java`, `fabiancpl/nlbse25_python`, and `fabiancpl/nlbse25_pharo`. When evaluating these models in Google Colab T4, the submission score obtained is 0.6536 (see [notebook](https://colab.research.google.com/drive/17Bep6v_1Ia_dVKNnVtg_myr7GMRhPfn1?usp=sharing)).
 
-### Repository organization
+### :card_index_dividers: Repository organization
 
 1. `competition_s1`: Detailed results reported in the first experimentation stage (fine-tuning of embedding models). Each JSON file contains the F1 for each label, average for each language, and overall average, runtime, GFLOPS, and submission score.
 2. `competition_s2`: Detailed results reported in the second experimentation stage (optimization of classification heads). Results are organized by language. Each JSON file contains the F1 for each label and average, runtime, GFLOPS, and submission score. The head corresponding to the best candidate it is also included. `baseline.json` corresponds to results for the baseline embedding model with optimized head and `nlbse25.json` without optimized head (default LR). `submission.json` corresponds to results for the joint evaluation of the best combinations of embedding models and classification heads for each language.
@@ -50,7 +50,7 @@ tool competition," in Proceedings of The 4th International Workshop on Natural L
     3.10. `evaluate_submission_s2-2_alt.ipynb`: Same as the previous one, however, this notebook considers the special case when the original baseline (embedding model + classification head) is considered as the best for a given language (e.g., Java).  
     3.11. `evaluate_nb.ipynb`: Trains and evaluates a very simple Naive Bayes model that uses a bag-of-words representation of the comments. This candidate achieves a very high submission score because (0.682) but is not competitive in terms of classification performance (0.47).
 
-### Cite as
+### :bookmark: Cite as
 
 ```
 @inproceedings{pena2025sentencebert,
