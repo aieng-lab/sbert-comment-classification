@@ -53,10 +53,11 @@ tool competition," in Proceedings of The 4th International Workshop on Natural L
 ### :bookmark: Cite as
 
 ```
-@inproceedings{pena2025sentencebert,
-  author    = {Fabian Peña and Steffen Herbold},
-  title     = {Evaluating the Performance and Efficiency of Sentence-BERT for Code Comment Classification},
-  booktitle = {Proceedings of the 4th International Workshop on Natural Language-based Software Engineering (NLBSE'25)},
-  year      = {2025}
-}
+@inproceedings{11029440,
+  author={Peña, Fabian C. and Herbold, Steffen},
+  booktitle={2025 IEEE/ACM International Workshop on Natural Language-Based Software Engineering (NLBSE)}, 
+  title={Evaluating the Performance and Efficiency of Sentence-BERT for Code Comment Classification}, 
+  year={2025},
+  pages={21-24},
+  doi={10.1109/NLBSE66842.2025.00010}}
 ```
